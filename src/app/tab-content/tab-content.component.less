@@ -1,0 +1,109 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+@text-color : #B61F2B;
+@border-color: #BA1C28;
+@white: #ffffff;
+@background: #4B0B12;
+@text-color: #DEDEDE;
+@heading: #C3B98B;
+
+#ice-tab-content {
+	overflow: hidden;
+	position: relative;
+  margin-top: 50px;
+}
+.tab-content {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	border-top: 0px;
+	border-top: 0px;
+	transform: translateY(-100%);
+	-moz-transform: translateY(-100%);
+  -webkit-transform: translateY(-100%);
+
+  h3 {
+    color: @heading
+  }
+
+  h5, p {
+    color: @text-color;
+  }
+
+    div {
+      display: inline-block;
+    }
+
+    .left {
+      background-color: @background;
+      border-radius: 50px 0 0 50px;
+      padding: 50px;
+    }
+
+    .right {
+      img {
+        width: 435px;
+        border-radius: 0 50px 50px 0px;
+        margin-top: -154px;
+      }
+    }
+
+}
+
+.tab-content:first-child {
+	position: relative;
+}
+.tab-content.tab-active {
+	border-top: 0px;
+	display: block;
+	transform: translateY(0%);
+	-moz-transform: translateY(0%);
+	-webkit-transform: translateY(0%);
+}
+
+.title {
+  color: #ff9900;
+  text-align: center;
+  letter-spacing: 14px;
+  text-transform: uppercase;
+  font-size: 17px;
+  margin: 40px 0px;
+}
+
+.ice-tab {
+	padding: 10px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.current-tab {
+  background: @border-color;
+  color: @white;
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  padding: 5px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: #BBBC90;
+  color: @background;
+  border: 2px solid @background;
+}
+
+.button1:hover {
+  background-color: @background;
+  color: white;
+}

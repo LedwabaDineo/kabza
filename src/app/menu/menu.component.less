@@ -1,0 +1,121 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+@text-color : #B61F2B;
+@border-color: #BA1C28;
+@white: #ffffff;
+@background: #4B0B12;
+@text-color: #DEDEDE;
+@heading: #C3B98B;
+
+
+  h3 {
+    color: @heading
+  }
+
+  h5, p {
+    color: @text-color;
+  }
+
+
+  .left {
+    background-color: @background;
+    border-radius: 50px 0 0 50px;
+    padding: 50px;
+  }
+    .right {
+
+      img {
+        width: 435px;
+        height: 411px;
+        border-radius: 0 50px 50px 0px;
+        margin-top: -275px;
+      }
+    }
+
+.button {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  padding: 5px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: #BBBC90;
+  color: @background;
+  border: 2px solid @background;
+
+  &:hover {
+    background-color: @background;
+    color: white;
+  }
+  &:focus {
+    border: none;
+    outline: none;
+  }
+}
+
+
+// new nav
+.nav {
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.nav-pills .nav-link.active {
+  color: #fff;
+  background-color: @border-color;
+  border-radius: 0;
+}
+
+.nav-pills .nav-item:first-child .nav-link {
+  border-radius: 50px 0 0 50px;
+  @media (max-width: 768px) {
+    border-radius: 50px
+  }
+}
+
+.nav-pills .nav-item:last-child .nav-link {
+  border-radius: 0 50px 50px 0px;
+  @media (max-width: 768px) {
+    border-radius: 50px
+  }
+}
+a.nav-link {
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: @border-color;
+}
+li.nav-item {
+  border: 2px solid @heading;
+  padding: 0;
+
+  &:first-child {
+    border-radius: 50px 0 0 50px;
+    border-right: none;
+  }
+  &:last-child {
+    border-radius: 0 50px 50px 0px;
+    border-left: none;
+  }
+
+  @media (max-width: 768px) {
+    border: 2px solid @heading;
+    border-radius: 50px;
+
+  &:first-child {
+    border-radius: 50px ;
+  }
+  &:last-child {
+    border-radius: 50px;
+  }
+  }
+}

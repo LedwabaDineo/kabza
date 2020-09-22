@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-md-12">
+      <ul class="nav nav-pills">
+        <li class="col-md-4 nav-item">
+          <a class="nav-link active" data-toggle="pill" href="#home" role="tab" aria-controls="pills-flamingo" aria-selected="true">About</a>
+        </li>
+        <li class="col-md-4 nav-item">
+          <a class="nav-link" data-toggle="pill" href="#profile" role="tab" aria-controls="pills-cuckoo" aria-selected="false">Our Work</a>
+        </li>
+        <li class="col-md-4 nav-item">
+          <a class="nav-link" data-toggle="pill" href="#messages" role="tab" aria-controls="pills-ostrich" aria-selected="false">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+</div>
+<div class="tab-content">
+  <div role="tabpanel" class="tab-pane active" id="home">
+
+    <app-welcome-tab></app-welcome-tab>
+     <app-tab-content-brochure></app-tab-content-brochure>
+     <app-tab-content-about></app-tab-content-about>
+  </div>
+
+  <div role="tabpanel" class="tab-pane" id="profile">
+     <app-gallery></app-gallery>
+  </div>
+
+  <div role="tabpanel" class="tab-pane" id="messages">
+    <app-contact-us></app-contact-us>
+  </div>
+</div>
+</div>

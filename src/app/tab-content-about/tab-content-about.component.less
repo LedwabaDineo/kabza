@@ -1,0 +1,78 @@
+
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+@text-color : #B61F2B;
+@border-color: #BA1C28;
+@white: #ffffff;
+@background: #BA1C28;
+@background-other: #4B0B12;
+@background-color: #505050;
+@text-color: #DEDEDE;
+@heading: #C3B98B;
+
+.container {
+  margin-top: 40px;
+}
+
+h3 {
+  color: @heading;
+}
+
+h6 {
+  color: @heading;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  font-style: italic;
+}
+
+p {
+  padding-top: 40px;
+  color: @text-color;
+  font-size: 16px;
+}
+.header {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.first-column {
+    background: @background-color;
+    color: white;
+    font-size: 2rem;
+    border-width: 2px;
+    padding: 60px;
+    border-radius: 50px 0 0 50px;
+    align-items: center;
+
+}
+.second-column {
+  border-radius: 0 50px 50px 0px;
+  background-image: url("/assets/images/kitchen.png");
+  background-size: cover;
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  padding: 5px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: #BBBC90;
+  color: @background-color;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.button1:hover {
+  background-color: @background;
+  color: white;
+}

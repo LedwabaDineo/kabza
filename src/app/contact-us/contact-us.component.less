@@ -1,0 +1,109 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import '~font-awesome/css/font-awesome.min.css';
+
+@text-color : #B61F2B;
+@border-color: #BA1C28;
+@white: #ffffff;
+@background: #4B0B12;
+@text-color: #DEDEDE;
+@heading: #C3B98B;
+@background-color: #4B0B12;
+@background-other: #505050;
+
+div {
+	box-sizing: border-box;
+	transition: all ease-in-out .5s;
+	-moz-transition: all ease-in-out .5s;
+  -webkit-transition: all ease-in-out .5s;
+  text-align: center;
+}
+
+.form-control {
+  border-radius: 50px;
+}
+
+.form-control.message {
+  &::placeholder {
+    padding: 10px;
+  }
+
+}
+.fa {
+  font-size: 24px;
+  padding: 6px;
+}
+
+.form-control {
+  &::placeholder {
+    font-size: 12px;
+  }
+
+}
+
+// new
+
+h3 {
+  color: @heading;
+}
+
+h5 {
+  color: @text-color;
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+p {
+  color: @text-color;
+  text-align: left;
+  font-size: 14px;
+}
+.header {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.first-column {
+    background: @border-color;
+    color: white;
+    font-size: 2rem;
+    border-width: 2px;
+    padding: 60px;
+    border-radius: 50px 0 0 50px;
+    align-items: center;
+
+}
+.second-column {
+  border-radius: 0 50px 50px 0px;
+  background-color: @background-other;
+  background-size: cover;
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  padding: 5px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: #BBBC90;
+  color: @background-color;
+  font-size: 12px;
+  font-weight: 500;
+  float: left;
+  padding: 8px;
+}
+
+.button1:hover {
+  background-color: @background;
+  color: white;
+}
+ a {
+   color: white;
+ }

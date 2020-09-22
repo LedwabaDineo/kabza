@@ -1,6 +1,7 @@
 {
   "extends": "tslint:recommended",
   "rules": {
+    "comment-format": [true, "check-space"],
     "align": {
       "options": [
         "parameters",
