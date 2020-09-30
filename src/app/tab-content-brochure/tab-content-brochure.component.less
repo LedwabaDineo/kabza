@@ -38,14 +38,15 @@ p {
     font-size: 2rem;
     border-width: 2px;
     padding: 60px;
-    border-radius: 0 34px 34px 0px;
+    border-radius: 0 20px 20px 0px;
     align-items: center;
 
 }
 .second-column {
-  border-radius: 34px 0 0 34px;
+  border-radius: 20px 0 0 20px;
   background-image: url("/assets/images/food.png");
   background-size: cover;
+  max-width: 47%;
 }
 
 .button {
@@ -64,13 +65,25 @@ p {
 }
 
 .button1 {
-  background-color: #BBBC90;
+  background-color: #E2E3A7;
   color: @background-color;
   font-size: 18px;
   font-weight: 500;
 }
 
 .button1:hover {
-  background-color: @background;
+  background-color: #C3B98B;
   color: white;
+}
+
+a {
+color: @background-color;
+
+& :hover {
+  color: white;
+  text-decoration: none;
+}
+& a:visited {
+  color: @background-color;
+}
 }
