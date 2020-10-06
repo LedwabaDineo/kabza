@@ -38,23 +38,23 @@ p {
     font-size: 2rem;
     border-width: 2px;
     padding: 60px;
+    max-width: 47%;
     border-radius: 0 20px 20px 0px;
     align-items: center;
 
     @media all and (max-width: 720px) and (min-width: 320px) {
       padding: 19px;
       border-radius: 0 0px 20px 20px;
+      max-width: 100%;
   }
 }
 .second-column {
   border-radius: 20px 0 0 20px;
   background-image: url("/assets/images/food.png");
   background-size: cover;
-  max-width: 47%;
   @media all and (max-width: 720px) and (min-width: 320px) {
     height: 340px;
     border-radius: 20px 20px 0px 0px;
-    max-width: 100%;
   }
 }
 
@@ -81,8 +81,8 @@ p {
 .button1 {
   background-color: #E2E3A7;
   color: @background-color;
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 14px;
+  font-weight: 300;
 }
 
 .button1:hover {
