@@ -33,6 +33,7 @@ p {
 fieldset {
   border: none;
   padding: 0;
+
 }
 
 label {
@@ -54,6 +55,7 @@ input {
 
   &::placeholder {
     color: @border-color;
+    padding: 0;
   }
 }
 
@@ -97,5 +99,8 @@ video.is-visible {
 @media all and (max-width: 1024px) and (min-width: 320px) {
   button {
     margin: 20px 0 0;
+}
+fieldset {
+  padding: 0;
 }
 }
