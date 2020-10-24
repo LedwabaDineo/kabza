@@ -6,34 +6,40 @@
         <p><i class="fa fa-map-marker"> </i>Woodlands Place, 95 Mat Ave, Pretoriuspark, Pretoria</p>
         <p><a href="tel:+27676123664"> <i class="fa fa-mobile-phone"></i> +27 (0) 67 612 3664</a></p>
         <p><a href="https://api.whatsapp.com/send?phone=+27676123664"> <i class="fa fa-whatsapp"></i>+27 (0) 67 612 3664</a></p>
-      <form method="post" data-form-title="CONTACT US">
+      <form method="post" data-form-title="CONTACT US" action="https://script.google.com/macros/s/AKfycbywZ7rXtRaOQegcGbRjoAABGJiOe5g_dXxcamgz/exec">
         <input type="hidden" data-form-email="true">
         <div class="row">
         <div class="form-group col-md-6">
-          <input type="text" class="form-control" name="name" required="" placeholder="Name" data-form-field="Name">
+          <input type="text" class="form-control" name="Name" required="" placeholder="Name" data-form-field="Name" required="required">
         </div>
 
         <div class="form-group col-md-6">
-          <input type="email" class="form-control" name="email" required="" placeholder="Email Address " data-form-field="Email">
+          <input type="email" class="form-control" name="Email" required="" placeholder="Email Address " data-form-field="Email" required="required">
         </div>
         </div>
         <div class="row">
         <div class="form-group col-md-6">
-          <input type="text" class="form-control" name="phone" placeholder="Date and time of service" data-form-field="Phone">
+          <input type="text" class="form-control" name="Date" placeholder="Date and time of service" data-form-field="Date" required="required">
         </div>
         <div class="form-group col-md-6">
-          <input type="tel" class="form-control" name="phone" placeholder="Number of people" data-form-field="Phone">
+          <input type="tel" class="form-control" name="Number" placeholder="Number of people" data-form-field="Number" required="required">
         </div>
       </div>
       <div class="row">
           <div class=" col-md-12 form-group">
-            <input type="text" class="form-control" name="phone" placeholder="Area" data-form-field="Phone">
+            <input type="text" class="form-control" name="Area" placeholder="Area" data-form-field="Area" required="required">
           </div>
           <div class="col-md-12 form-group">
-            <textarea class="form-control message" name="message" placeholder="Write your message here, eg: dietary needs, table setup, flower arrangements, theme, etc" rows="7" data-form-field="Message"></textarea>
+            <textarea class="form-control message" name="message" placeholder="Write your message here, eg: dietary needs, table setup, flower arrangements, theme, etc" rows="7" data-form-field="Message" required="required"></textarea>
           </div>
       </div>
         <button type="submit" class="col-md-3 btn button1 button">Send</button>
+
+        <div class="thankyou_message" style="display:none;">
+          <h2><em>Thanks</em> for contacting us!
+            We will get back to you soon!</h2>
+        </div>
+
       </form>
     </div>
     <div class="col-md-6 col-sm-12  second-column">
